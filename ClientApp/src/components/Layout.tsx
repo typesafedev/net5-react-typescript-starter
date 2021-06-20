@@ -1,10 +1,14 @@
-import { FC } from "react";
-import { Container } from "reactstrap";
-import { NavMenu } from "./NavMenu";
+import { FC } from 'react'
+import { Container } from 'reactstrap'
+import { NavMenu } from './NavMenu'
 
-export const Layout: FC = ({ children }) => (
+type LayoutProps = {
+  children: React.ReactNode
+}
+
+export const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => (
   <div>
     <NavMenu />
     <Container>{children}</Container>
   </div>
-);
+)

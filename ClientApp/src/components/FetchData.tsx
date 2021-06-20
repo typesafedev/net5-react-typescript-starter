@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { FC, useState, useEffect } from 'react'
 
 type Forecast = {
   date: string
@@ -8,19 +8,19 @@ type Forecast = {
 }
 
 export const FetchData: FC = () => {
-  const [forecasts, setForecasts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [forecasts, setForecasts] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const populateWeatherData = async () => {
-      const response = await fetch("weatherforecast");
-      const data = await response.json();
-      setForecasts(data);
-      setLoading(false);
-    };
+      const response = await fetch('weatherforecast')
+      const data = await response.json()
+      setForecasts(data)
+      setLoading(false)
+    }
 
-    populateWeatherData();
-  }, []);
+    populateWeatherData()
+  }, [])
 
   const renderForecastsTable = (forecasts: Array<Forecast>) => {
     return (
@@ -44,16 +44,16 @@ export const FetchData: FC = () => {
           ))}
         </tbody>
       </table>
-    );
-  };
+    )
+  }
 
-  let contents = loading ? (
+  const contents = loading ? (
     <p>
       <em>Loading...</em>
     </p>
   ) : (
     renderForecastsTable(forecasts)
-  );
+  )
 
   return (
     <div>
@@ -61,5 +61,5 @@ export const FetchData: FC = () => {
       <p>This component demonstrates fetching data from the server.</p>
       {contents}
     </div>
-  );
-};
+  )
+}

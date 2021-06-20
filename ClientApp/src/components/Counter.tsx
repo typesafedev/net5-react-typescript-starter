@@ -1,10 +1,10 @@
-import { FC, useState } from "react";
+import { FC, useState } from 'react'
 
 export const Counter: FC = () => {
-  const [currentCount, setCurrentCount] = useState(0);
+  const [currentCount, setCurrentCount] = useState(0)
   const incrementCounter = () => {
-    setCurrentCount(currentCount + 1);
-  };
+    setCurrentCount(currentCount + 1)
+  }
 
   return (
     <div>
@@ -20,5 +20,5 @@ export const Counter: FC = () => {
         Increment
       </button>
     </div>
-  );
-};
+  )
+}
