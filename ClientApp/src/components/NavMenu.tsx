@@ -26,7 +26,7 @@ export const NavMenu: FC = () => {
       >
         <Container>
           <NavbarBrand tag={Link} to="/">
-            .Net 5 FluentValidation Starter
+            .Net 6 react ts Starter
           </NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="mr-2" />
           <Collapse

@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/core5-fluentvalidation-starter.csproj",
+        "${workspaceFolder}/net6-react-ts-starter.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/core5-fluentvalidation-starter.csproj",
+        "${workspaceFolder}/net6-react-ts-starter.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -32,7 +32,7 @@
       "args": [
         "watch",
         "run",
-        "${workspaceFolder}/core5-fluentvalidation-starter.csproj",
+        "${workspaceFolder}/net6-react-ts-starter.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
